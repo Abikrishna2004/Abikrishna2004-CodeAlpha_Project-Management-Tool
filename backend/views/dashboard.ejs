@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+  <h1>Welcome, <%= user.username %> 🎉</h1>
+  <a href="/projects/create">+ New Project</a> | <a href="/logout">Logout</a>
+
+  <h2>Your Projects</h2>
+  <ul>
+    <% projects.forEach(project => { %>
+      <li><a href="/projects/<%= project.id %>"><%= project.name %></a></li>
+    <% }) %>
+  </ul>
+</body>
+</html>

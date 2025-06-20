@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+nav h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn {
+  background: #2ecc71;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #27ae60;
+}
+
+/* Project List */
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  padding: 12px 18px;
+  margin: 10px 0;
+  background: #ecf0f1;
+  border-radius: 8px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.project-list li:hover {
+  background: #dfe6e9;
+}
+
+.project-list li a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Form Inputs */
+input[type="text"], input[type="date"], textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+/* Task Cards */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-card {
+  background: #fdfdfd;
+  border: 1px solid #dcdde1;
+  border-left: 6px solid #3498db;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.task-card h3 {
+  margin-top: 0;
+}
+
+.task-meta {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Status Form */
+.status-form {
+  margin-bottom: 10px;
+}
+
+.status-form select {
+  padding: 6px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Comment Section */
+.comment-box {
+  margin-top: 15px;
+}
+
+.comment-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.comment-box li {
+  background: #ecf0f1;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.comment-box form input {
+  width: 80%;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Add Task Form */
+.add-task-form {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px dashed #bdc3c7;
+  border-radius: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav h1 {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .project-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input, textarea, select, button {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #eef1f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .register-box {
+      max-width: 400px;
+      margin: 100px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .register-box h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .register-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    .register-box button {
+      width: 100%;
+      background: #2ecc71;
+      border: none;
+      color: white;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .register-box button:hover {
+      background: #27ae60;
+    }
+
+    .register-box .login-link {
+      margin-top: 20px;
+      display: block;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .register-box .login-link a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .register-box .login-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-box">
+    <h2>Create Account 📝</h2>
+    <form action="/register" method="POST" autocomplete="off">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="email" name="email" placeholder="Email" required autocomplete="off" />
+      <input type="password" name="password" placeholder="Password" required autocomplete="new-password" />
+      <button type="submit">Register</button>
+    </form>
+    <div class="login-link">
+      Already have an account? <a href="/login-page">Login here</a>
+    </div>
+  </div>
+</body>
+</html>
