@@ -21,18 +21,6 @@ A full-stack web application to manage tasks and projects, designed as part of a
 
 ---
 
-## 📷 Screenshots
-
-> Include the following screenshots:
-- Login Page  
-- Register Page  
-- Dashboard with Projects  
-- Create Project Page  
-- Project Detail with Task Cards  
-- Mobile View (responsive layout)
-
----
-
 ## 🛠️ Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript
